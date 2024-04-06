@@ -1,0 +1,92 @@
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 20px;
+}
+
+/* Logo */
+.logo img{
+    flex: 1;
+    max-height: 30px;
+}
+
+/* Menu */
+.menu {
+    flex: 14;
+    text-align: center;
+}
+
+.menu-item {
+    display: inline-block;
+    position: relative;
+}
+
+.menu-item a {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.menu-item:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Search bar */
+.search-bar {
+    flex: 2;
+}
+
+.search-bar input[type="text"] {
+    width: 80%;
+    padding: 8px 19px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+        background-color: #989696;
+    font-size: 16px;
+}
+
+.search-bar input[type="text"]::placeholder {
+    color: #ccc;
+}
+.search-icon img {
+    height: 18px;
+transform: translateY(-145%);
+
+}
+
+/* User and cart icons */
+.icons {
+    flex: 1;
+    text-align: right;
+    cursor: pointer;
+}
+
+.icons i {
+    color: #fff;
+    margin-left: 10px;
+    font-size: 18px;
+}
+.icons img {
+    max-height: 25px;
+}

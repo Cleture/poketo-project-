@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-/* Navbar container */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -12,13 +12,12 @@
     padding: 10px 20px;
 }
 
-/* Logo */
+
 .poketo-logo img{
     flex: 1;
     max-height: 30px;
 }
 
-/* Menu */
 .menu {
     flex: 14;
     text-align: center;
@@ -55,19 +54,19 @@
     display: block;
 }
 
-/* Search bar */
+
 .search-bar {
     flex: 2;
 }
 
 .search-bar input[type="text"] {
-    width: 73%;
-    padding: 8px 14px;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-    background-color: #989696;
-    font-size: 12px;
+    width: 87%;
+        padding: 11px 28px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        background-color: #F3F3F3;
+        font-size: 12px;
 }
 
 .search-bar input[type="text"]::placeholder {
@@ -79,7 +78,7 @@ transform: translateY(-145%);
 
 }
 
-/* User and cart icons */
+
 .icons {
     flex: 1;
     text-align: right;
@@ -95,44 +94,36 @@ transform: translateY(-145%);
     max-height: 25px;
 }
 
-/* Hero section container */
 .hero-section {
     position: relative;
     width: 100%;
-    height: 400px;
-    /* Adjust height as needed */
+    height: 500px;
     background-image: url('./Assets/images/pk_d_hero_bis_spectrum_wall_planner.jpeg');
-    /* Replace 'hero-image.jpg' with your image path */
     background-size: cover;
     background-position: center;
     color: #000000;
 }
 
-/* Header text */
 .hero-header {
     position: absolute;
-    top: 50px;
-    /* Adjust vertical position as needed */
-    left: 50px;
-    /* Adjust horizontal position as needed */
-    font-size: 36px;
-    font-weight: bold;
+        top: 50px;
+        left: 7px;
+        font-size: 45px;
+        font-weight: bold;
 }
 
-/* Description text */
+
 .hero-description {
     position: absolute;
     top: 120px;
-    /* Adjust vertical position as needed */
-    left: 50px;
-    /* Adjust horizontal position as needed */
+    left: 5px;
     font-size: 18px;
 }
 
 .hero-button {
     position: absolute;
     top: 200px;
-    left: 50px;
+    left: 10px;
     padding: 17px 70px;
     background-color: #007bff;
     color: #fff;
@@ -142,27 +133,23 @@ transform: translateY(-145%);
     cursor: pointer;
 }
 
-/* Button hover effect */
 .hero-button:hover {
     background-color: #0056b3;
 }
 
-/* Blue section container */
+
 .blue-section {
     background-color: #007bff;
     color: #fff;
     padding: 1px 0;
-    /* Adjust padding as needed */
     text-align: center;
 }
 
-/* Text container */
 .text-container {
     max-width: 800px;
     margin: 0 auto;
 }
 
-/* Text style */
 .text-container p {
     font-size: 24px;
     line-height: 1.6;
@@ -172,37 +159,27 @@ transform: translateY(-145%);
     background-color: #007bff;
     color: #fff;
     padding: 50px 0;
-    /* Adjust padding as needed */
 }
 
-/* Container for logos */
+
 .logos-container {
     display: flex;
     justify-content: center;
-    /* Center the logos horizontally */
     align-items: center;
-    /* Center the logos vertically */
-    background-color: #007bff;    /* Background color of the container */
+    background-color: #007bff;   
     padding: 0px 0;
-    /* Adjust padding as needed */
 }
 
-/* Individual logo */
 .logo {
     margin: 0 20px;
-    /* Adjust margin between logos */
 }
 
-/* Logo image */
 .logo img {
     max-width: 900px;
-    /* Adjust maximum width of logos */
     height: auto;
-    /* Maintain aspect ratio */
     max-height: 800px;
 }
 
-/* Content wrapper */
 .content-wrapper {
     display: flex;
     justify-content: space-between;
@@ -211,13 +188,11 @@ transform: translateY(-145%);
     background-color: #f0f0f0;
 }
 
-/* Product list title */
 .product-list-title {
     font-size: 39px;
     font-weight: bold;
 }
 
-/* Slides controller buttons */
 .slides-controller {
     display: flex;
 }
@@ -225,13 +200,11 @@ transform: translateY(-145%);
 .slides-controller button {
     margin-left: 10px;
     width: 40px;
-    /* Adjust width and height for the button size */
     height: 40px;
     background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 50%;
-    /* Make the button circular */
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -242,7 +215,6 @@ transform: translateY(-145%);
     background-color: #0056b3;
 }
 
-/* Product list container */
 .product-list {
     display: flex;
     justify-content: center;
@@ -252,14 +224,97 @@ transform: translateY(-145%);
     background-color: #f0f0f0;
 }
 
-/* Product image */
 .product-image {
 width: calc(33.33% - 20px);
-    /* Set width for each image container */    /* Adjust width of each product image */
     height: 399px;
-    /* Set height to match width for square aspect ratio */
     margin: 10px;
-    /* Adjust spacing between product images */
     object-fit: cover;
-    /* Ensure the image covers the entire container */
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: #ADE4FF;
+}
+
+.content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.header {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.description {
+    margin-top: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.image {
+    flex: 1;
+}
+
+.image img {
+    max-width: 90%;
+        border-radius: 26px;
+    max-height: 90%;
+}
+
+.side-by-side-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #F6EDE6;
+}
+
+.side-by-side-content {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.side-by-side-header {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.side-by-side-description {
+    margin-top: 10px;
+}
+
+.side-by-side-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.side-by-side-image {
+    flex: 1;
+}
+
+.side-by-side-image img {
+    max-width: 80%;
+        border-radius: 26px;
+        max-height: 90%;
 }

@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop All</title>
+    <link
+      rel="shortcut icon"
+      href="./Assets/images/PK-favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="poketo-logo">
+        <img src="./Assets/images/pk-logotype-dark.png" alt="Logo" />
+      </div>
+      <div class="menu">
+        <div class="menu-item">
+          <a href="#">Shop All <i class="fas fa-angle-down"></i></a>
+          <div class="dropdown-content">
+            <a href="#">Submenu 1</a>
+            <a href="#">Submenu 2</a>
+            <a href="#">Submenu 3</a>
+          </div>
+        </div>
+        <div class="menu-item">
+          <a href="#">Best Sellers<i class="fas fa-angle-down"></i></a>
+          <div class="dropdown-content">
+            <a href="#">Submenu 1</a>
+            <a href="#">Submenu 2</a>
+            <a href="#">Submenu 3</a>
+          </div>
+        </div>
+        <div class="menu-item">
+          <a href="#">Stationary<i class="fas fa-angle-down"></i></a>
+          <div class="dropdown-content">
+            <a href="#">Submenu 1</a>
+            <a href="#">Submenu 2</a>
+            <a href="#">Submenu 3</a>
+          </div>
+        </div>
+        <div class="menu-item">
+          <a href="#">Desk Supplies<i class="fas fa-angle-down"></i></a>
+          <div class="dropdown-content">
+            <a href="#">Submenu 1</a>
+            <a href="#">Submenu 2</a>
+            <a href="#">Submenu 3</a>
+          </div>
+        </div>
+        <div class="menu-item">
+          <a href="#">Home & Lifestyle<i class="fas fa-angle-down"></i></a>
+          <div class="dropdown-content">
+            <a href="#">Submenu 1</a>
+            <a href="#">Submenu 2</a>
+            <a href="#">Submenu 3</a>
+          </div>
+        </div>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search..." />
+        <i class="fas fa-search search-icon">
+          <img src="./Assets/images/search.png" alt=""
+        /></i>
+      </div>
+      <div class="icons">
+        <i class="fas fa-user">
+          <img src="./Assets/images/user.png" alt="" srcset=""
+        /></i>
+        <i class="fas fa-shopping-cart">
+          <img src="./Assets/images/shopping-cart.png" alt=""
+        /></i>
+      </div>
+    </div>
+
+    <div class="shop-hero-section">
+      <div class="shop-left-content">
+        <h2 class="shop-header-text">Shop All</h2>
+        <p class="shop-description-text">
+          From desk to dinner table, our range of fun, functional stationery and
+          home goods brings art and design into your every day.
+        </p>
+      </div>
+      <div class="shop-right-content">
+        <img src="Assets/images/shopall.webp" alt="Image" />
+      </div>
+    </div>
+
+    <div class="facets-container">
+      <div class="left-content">
+        <div class="filter-text">Filter:</div>
+        <div class="dropdown">
+          <button
+            class="dropdown-toggle"
+            type="button"
+            id="availabilityDropdown"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Availability <i class="fas fa-chevron-down"></i>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="availabilityDropdown">
+            <li><a class="dropdown-item" href="#">In Stock</a></li>
+            <li><a class="dropdown-item" href="#">Out of Stock</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button
+            class="dropdown-toggle"
+            type="button"
+            id="priceDropdown"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Price <i class="fas fa-chevron-down"></i>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="priceDropdown">
+            <li><a class="dropdown-item" href="#">Low to High</a></li>
+            <li><a class="dropdown-item" href="#">High to Low</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="right-content">
+        <div class="sort-by">Sort By:</div>
+        <select class="form-select">
+          <option selected>Newest Arrivals</option>
+          <option value="1">Price: Low to High</option>
+          <option value="2">Price: High to Low</option>
+        </select>
+        <div class="text">124 items</div>
+      </div>
+    </div>
+
+    <div class="product-list2">
+      <div class="product-tile2">
+        <img
+          src="./Assets/images/PK-loveYourMindJournal-Product-1.jpeg"
+          alt="Product 1"
+          class="product-image2"
+        />
+        <div class="product-info2">
+          <h3 class="product-name2">Product 1</h3>
+          <div class="product-rating2">
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+          </div>
+        </div>
+        <div class="product-card2">
+          <img
+            src="./Assets/images/PK-loveYourMindJournal-Product-2.jpeg"
+            alt="Product Image"
+            class="product-image2"
+          />
+          <a href="./product.html"
+            ><button class="add-to-cart-button2">Add to Cart</button></a
+          >
+        </div>
+      </div>
+
+      <div class="product-tile2">
+        <img
+          src="./Assets/images/Pk-SpectrumWallCalendar-printed--GIF.gif"
+          alt="Product 1"
+          class="product-image2"
+        />
+        <div class="product-info2">
+          <h3 class="product-name2">Product 1</h3>
+          <div class="product-rating2">
+            ] <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+          </div>
+          <div class="product-card2">
+            <img
+              src="./Assets/images/PK-PDP-SpectrumWallPlanner-Gradient.jpg"
+              alt="Product Image"
+              class="product-image2"
+            />
+            <a href="./product.html"
+              ><button class="add-to-cart-button2">Add to Cart</button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="product-tile2">
+        <img
+          src="./Assets/images/earthy-mini-planner.gif"
+          alt="Product 1"
+          class="product-image2"
+        />
+        <div class="product-info2">
+          <h3 class="product-name2">Product 1</h3>
+          <div class="product-rating2">
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+          </div>
+          <div class="product-card2">
+            <img
+              src="./Assets/images/PK-PDP-ATF-SpectrumMiniPlanner-earthy.jpeg"
+              alt="Product Image"
+              class="product-image2"
+            />
+            <a href="./product.html"
+              ><button class="add-to-cart-button2">Add to Cart</button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="product-tile2">
+        <img
+          src="./Assets/images/PK-ProjectPLanner-SpringCollection-Red-Front-Product.webp"
+          alt="Product 1"
+          class="product-image2"
+        />
+        <div class="product-info2">
+          <h3 class="product-name2">Product 1</h3>
+          <div class="product-rating2">
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+          </div>
+          <div class="product-card2">
+            <img
+              src="./Assets/images/PK-ProjectPLanner-SpringCollection-Red-Back-Product.jpeg"
+              alt="Product Image"
+              class="product-image2"
+            />
+            <a href="./product.html"
+              ><button class="add-to-cart-button2">Add to Cart</button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="product-tile2">
+        <img
+          src="./Assets/images/PK-ConceptPLanner-SpringCollection-Blocks-Front-Product.webp"
+          alt="Product 1"
+          class="product-image2"
+        />
+        <div class="product-info2">
+          <h3 class="product-name2">Product 1</h3>
+          <div class="product-rating2">
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+          </div>
+          <div class="product-card2">
+            <img
+              src="./Assets/images/PK-ConceptPLanner-SpringCollection-Blocks-Back-Product.jpeg"
+              alt="Product Image"
+              class="product-image2"
+            />
+            <a href="./product.html"
+              ><button class="add-to-cart-button2">Add to Cart</button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="product-tile2">
+        <img
+          src="./Assets/images/Accordion-Folder-Large-Black-01_1.jpg"
+          alt="Product 1"
+          class="product-image2"
+        />
+        <div class="product-info2">
+          <h3 class="product-name2">Product 1</h3>
+          <div class="product-rating2">
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+          </div>
+          <div class="product-card2">
+            <img
+              src="./Assets/images/Accordion-Pro-Filer-1x1-06_1.jpg"
+              alt="Product Image"
+              class="product-image2"
+            />
+            <a href="./product.html"
+              ><button class="add-to-cart-button2">Add to Cart</button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="product-tile2">
+        <img
+          src="./Assets/images/Everything-Desk-Pad-01.jpg"
+          alt="Product 1"
+          class="product-image2"
+        />
+        <div class="product-info2">
+          <h3 class="product-name2">Product 1</h3>
+          <div class="product-rating2">
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+          </div>
+          <div class="product-card2">
+            <img
+              src="./Assets/images/Everyday-Desk-Pad-Stop-Motion-01.gif"
+              alt="Product Image"
+              class="product-image2"
+            />
+            <a href="./product.html"
+              ><button class="add-to-cart-button2">Add to Cart</button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="product-tile2">
+        <img
+          src="./Assets/images/PK-D-PDP-Wallet-Dome-Navy-ATF-01-2x_14117993-bc68-43fc-9469-1e38db9cbd75.jpg"
+          alt="Product 1"
+          class="product-image2"
+        />
+        <div class="product-info2">
+          <h3 class="product-name2">Product 1</h3>
+          <div class="product-rating2">
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+          </div>
+          <div class="product-card2">
+            <img
+              src="./Assets/images/Dome-Wallet-Navy-Open.jpg"
+              alt="Product Image"
+              class="product-image2"
+            />
+            <a href="./product.html"
+              ><button class="add-to-cart-button2">Add to Cart</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-list2">
+      <div class="product-tile2">
+        <img
+          src="./Assets/images/PK-loveYourMindJournal-Product-1.jpeg"
+          alt="Product 1"
+          class="product-image2"
+        />
+        <div class="product-info2">
+          <h3 class="product-name2">Product 1</h3>
+          <div class="product-rating2">
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+          </div>
+        </div>
+        <div class="product-card2">
+          <img
+            src="./Assets/images/PK-loveYourMindJournal-Product-2.jpeg"
+            alt="Product Image"
+            class="product-image2"
+          />
+          <a href="./product.html"
+            ><button class="add-to-cart-button2">Add to Cart</button></a
+          >
+        </div>
+      </div>
+
+      <div class="product-tile2">
+        <img
+          src="./Assets/images/Pk-SpectrumWallCalendar-printed--GIF.gif"
+          alt="Product 1"
+          class="product-image2"
+        />
+        <div class="product-info2">
+          <h3 class="product-name2">Product 1</h3>
+          <div class="product-rating2">
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+          </div>
+          <div class="product-card2">
+            <img
+              src="./Assets/images/PK-PDP-SpectrumWallPlanner-Gradient.jpg"
+              alt="Product Image"
+              class="product-image2"
+            />
+            <a href="./product.html"
+              ><button class="add-to-cart-button2">Add to Cart</button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="product-tile2">
+        <img
+          src="./Assets/images/earthy-mini-planner.gif"
+          alt="Product 1"
+          class="product-image2"
+        />
+        <div class="product-info2">
+          <h3 class="product-name2">Product 1</h3>
+          <div class="product-rating2">
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+          </div>
+          <div class="product-card2">
+            <img
+              src="./Assets/images/PK-PDP-ATF-SpectrumMiniPlanner-earthy.jpeg"
+              alt="Product Image"
+              class="product-image2"
+            />
+            <a href="./product.html"
+              ><button class="add-to-cart-button2">Add to Cart</button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="product-tile2">
+        <img
+          src="./Assets/images/PK-ProjectPLanner-SpringCollection-Red-Front-Product.webp"
+          alt="Product 1"
+          class="product-image2"
+        />
+        <div class="product-info2">
+          <h3 class="product-name2">Product 1</h3>
+          <div class="product-rating2">
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+          </div>
+          <div class="product-card2">
+            <img
+              src="./Assets/images/PK-ProjectPLanner-SpringCollection-Red-Back-Product.jpeg"
+              alt="Product Image"
+              class="product-image2"
+            />
+            <a href="./product.html"
+              ><button class="add-to-cart-button2">Add to Cart</button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="product-tile2">
+        <img
+          src="./Assets/images/PK-ConceptPLanner-SpringCollection-Blocks-Front-Product.webp"
+          alt="Product 1"
+          class="product-image2"
+        />
+        <div class="product-info2">
+          <h3 class="product-name2">Product 1</h3>
+          <div class="product-rating2">
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+          </div>
+          <div class="product-card2">
+            <img
+              src="./Assets/images/PK-ConceptPLanner-SpringCollection-Blocks-Back-Product.jpeg"
+              alt="Product Image"
+              class="product-image2"
+            />
+            <a href="./product.html"
+              ><button class="add-to-cart-button2">Add to Cart</button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="product-tile2">
+        <img
+          src="./Assets/images/Accordion-Folder-Large-Black-01_1.jpg"
+          alt="Product 1"
+          class="product-image2"
+        />
+        <div class="product-info2">
+          <h3 class="product-name2">Product 1</h3>
+          <div class="product-rating2">
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+          </div>
+          <div class="product-card2">
+            <img
+              src="./Assets/images/Accordion-Pro-Filer-1x1-06_1.jpg"
+              alt="Product Image"
+              class="product-image2"
+            />
+            <a href="./product.html"
+              ><button class="add-to-cart-button2">Add to Cart</button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="product-tile2">
+        <img
+          src="./Assets/images/Everything-Desk-Pad-01.jpg"
+          alt="Product 1"
+          class="product-image2"
+        />
+        <div class="product-info2">
+          <h3 class="product-name2">Product 1</h3>
+          <div class="product-rating2">
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+          </div>
+          <div class="product-card2">
+            <img
+              src="./Assets/images/Everyday-Desk-Pad-Stop-Motion-01.gif"
+              alt="Product Image"
+              class="product-image2"
+            />
+            <a href="./product.html"
+              ><button class="add-to-cart-button2">Add to Cart</button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="product-tile2">
+        <img
+          src="./Assets/images/PK-D-PDP-Wallet-Dome-Navy-ATF-01-2x_14117993-bc68-43fc-9469-1e38db9cbd75.jpg"
+          alt="Product 1"
+          class="product-image2"
+        />
+        <div class="product-info2">
+          <h3 class="product-name2">Product 1</h3>
+          <div class="product-rating2">
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+          </div>
+          <div class="product-card2">
+            <img
+              src="./Assets/images/Dome-Wallet-Navy-Open.jpg"
+              alt="Product Image"
+              class="product-image2"
+            />
+            <a href="./product.html"
+              ><button class="add-to-cart-button2">Add to Cart</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-list2">
+      <div class="product-tile2">
+        <img
+          src="./Assets/images/PK-loveYourMindJournal-Product-1.jpeg"
+          alt="Product 1"
+          class="product-image2"
+        />
+        <div class="product-info2">
+          <h3 class="product-name2">Product 1</h3>
+          <div class="product-rating2">
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+          </div>
+        </div>
+        <div class="product-card2">
+          <img
+            src="./Assets/images/PK-loveYourMindJournal-Product-2.jpeg"
+            alt="Product Image"
+            class="product-image2"
+          />
+          <a href="./product.html"
+            ><button class="add-to-cart-button2">Add to Cart</button></a
+          >
+        </div>
+      </div>
+
+      <div class="product-tile2">
+        <img
+          src="./Assets/images/Pk-SpectrumWallCalendar-printed--GIF.gif"
+          alt="Product 1"
+          class="product-image2"
+        />
+        <div class="product-info2">
+          <h3 class="product-name2">Product 1</h3>
+          <div class="product-rating2">
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+          </div>
+          <div class="product-card2">
+            <img
+              src="./Assets/images/PK-PDP-SpectrumWallPlanner-Gradient.jpg"
+              alt="Product Image"
+              class="product-image2"
+            />
+            <a href="./product.html"
+              ><button class="add-to-cart-button2">Add to Cart</button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="product-tile2">
+        <img
+          src="./Assets/images/earthy-mini-planner.gif"
+          alt="Product 1"
+          class="product-image2"
+        />
+        <div class="product-info2">
+          <h3 class="product-name2">Product 1</h3>
+          <div class="product-rating2">
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+          </div>
+          <div class="product-card2">
+            <img
+              src="./Assets/images/PK-PDP-ATF-SpectrumMiniPlanner-earthy.jpeg"
+              alt="Product Image"
+              class="product-image2"
+            />
+            <a href="./product.html"
+              ><button class="add-to-cart-button2">Add to Cart</button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="product-tile2">
+        <img
+          src="./Assets/images/PK-ProjectPLanner-SpringCollection-Red-Front-Product.webp"
+          alt="Product 1"
+          class="product-image2"
+        />
+        <div class="product-info2">
+          <h3 class="product-name2">Product 1</h3>
+          <div class="product-rating2">
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+          </div>
+          <div class="product-card2">
+            <img
+              src="./Assets/images/PK-ProjectPLanner-SpringCollection-Red-Back-Product.jpeg"
+              alt="Product Image"
+              class="product-image2"
+            />
+            <a href="./product.html"
+              ><button class="add-to-cart-button2">Add to Cart</button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="product-tile2">
+        <img
+          src="./Assets/images/PK-ConceptPLanner-SpringCollection-Blocks-Front-Product.webp"
+          alt="Product 1"
+          class="product-image2"
+        />
+        <div class="product-info2">
+          <h3 class="product-name2">Product 1</h3>
+          <div class="product-rating2">
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+          </div>
+          <div class="product-card2">
+            <img
+              src="./Assets/images/PK-ConceptPLanner-SpringCollection-Blocks-Back-Product.jpeg"
+              alt="Product Image"
+              class="product-image2"
+            />
+            <a href="./product.html"
+              ><button class="add-to-cart-button2">Add to Cart</button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="product-tile2">
+        <img
+          src="./Assets/images/Accordion-Folder-Large-Black-01_1.jpg"
+          alt="Product 1"
+          class="product-image2"
+        />
+        <div class="product-info2">
+          <h3 class="product-name2">Product 1</h3>
+          <div class="product-rating2">
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+          </div>
+          <div class="product-card2">
+            <img
+              src="./Assets/images/Accordion-Pro-Filer-1x1-06_1.jpg"
+              alt="Product Image"
+              class="product-image2"
+            />
+            <a href="./product.html"
+              ><button class="add-to-cart-button2">Add to Cart</button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="product-tile2">
+        <img
+          src="./Assets/images/Everything-Desk-Pad-01.jpg"
+          alt="Product 1"
+          class="product-image2"
+        />
+        <div class="product-info2">
+          <h3 class="product-name2">Product 1</h3>
+          <div class="product-rating2">
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+          </div>
+          <div class="product-card2">
+            <img
+              src="./Assets/images/Everyday-Desk-Pad-Stop-Motion-01.gif"
+              alt="Product Image"
+              class="product-image2"
+            />
+            <a href="./product.html"
+              ><button class="add-to-cart-button2">Add to Cart</button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="product-tile2">
+        <img
+          src="./Assets/images/PK-D-PDP-Wallet-Dome-Navy-ATF-01-2x_14117993-bc68-43fc-9469-1e38db9cbd75.jpg"
+          alt="Product 1"
+          class="product-image2"
+        />
+        <div class="product-info2">
+          <h3 class="product-name2">Product 1</h3>
+          <div class="product-rating2">
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+          </div>
+          <div class="product-card2">
+            <img
+              src="./Assets/images/Dome-Wallet-Navy-Open.jpg"
+              alt="Product Image"
+              class="product-image2"
+            />
+            <a href="./product.html"
+              ><button class="add-to-cart-button2">Add to Cart</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-list2">
+      <div class="product-tile2">
+        <img
+          src="./Assets/images/PK-loveYourMindJournal-Product-1.jpeg"
+          alt="Product 1"
+          class="product-image2"
+        />
+        <div class="product-info2">
+          <h3 class="product-name2">Product 1</h3>
+          <div class="product-rating2">
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+          </div>
+        </div>
+        <div class="product-card2">
+          <img
+            src="./Assets/images/PK-loveYourMindJournal-Product-2.jpeg"
+            alt="Product Image"
+            class="product-image2"
+          />
+          <a href="./product.html"
+            ><button class="add-to-cart-button2">Add to Cart</button></a
+          >
+        </div>
+      </div>
+
+      <div class="product-tile2">
+        <img
+          src="./Assets/images/Pk-SpectrumWallCalendar-printed--GIF.gif"
+          alt="Product 1"
+          class="product-image2"
+        />
+        <div class="product-info2">
+          <h3 class="product-name2">Product 1</h3>
+          <div class="product-rating2">
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+          </div>
+          <div class="product-card2">
+            <img
+              src="./Assets/images/PK-PDP-SpectrumWallPlanner-Gradient.jpg"
+              alt="Product Image"
+              class="product-image2"
+            />
+            <a href="./product.html"
+              ><button class="add-to-cart-button2">Add to Cart</button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="product-tile2">
+        <img
+          src="./Assets/images/earthy-mini-planner.gif"
+          alt="Product 1"
+          class="product-image2"
+        />
+        <div class="product-info2">
+          <h3 class="product-name2">Product 1</h3>
+          <div class="product-rating2">
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+          </div>
+          <div class="product-card2">
+            <img
+              src="./Assets/images/PK-PDP-ATF-SpectrumMiniPlanner-earthy.jpeg"
+              alt="Product Image"
+              class="product-image2"
+            />
+            <a href="./product.html"
+              ><button class="add-to-cart-button2">Add to Cart</button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="product-tile2">
+        <img
+          src="./Assets/images/PK-ProjectPLanner-SpringCollection-Red-Front-Product.webp"
+          alt="Product 1"
+          class="product-image2"
+        />
+        <div class="product-info2">
+          <h3 class="product-name2">Product 1</h3>
+          <div class="product-rating2">
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+          </div>
+          <div class="product-card2">
+            <img
+              src="./Assets/images/PK-ProjectPLanner-SpringCollection-Red-Back-Product.jpeg"
+              alt="Product Image"
+              class="product-image2"
+            />
+            <a href="./product.html"
+              ><button class="add-to-cart-button2">Add to Cart</button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="product-tile2">
+        <img
+          src="./Assets/images/PK-ConceptPLanner-SpringCollection-Blocks-Front-Product.webp"
+          alt="Product 1"
+          class="product-image2"
+        />
+        <div class="product-info2">
+          <h3 class="product-name2">Product 1</h3>
+          <div class="product-rating2">
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+          </div>
+          <div class="product-card2">
+            <img
+              src="./Assets/images/PK-ConceptPLanner-SpringCollection-Blocks-Back-Product.jpeg"
+              alt="Product Image"
+              class="product-image2"
+            />
+            <a href="./product.html"
+              ><button class="add-to-cart-button2">Add to Cart</button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="product-tile2">
+        <img
+          src="./Assets/images/Accordion-Folder-Large-Black-01_1.jpg"
+          alt="Product 1"
+          class="product-image2"
+        />
+        <div class="product-info2">
+          <h3 class="product-name2">Product 1</h3>
+          <div class="product-rating2">
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+          </div>
+          <div class="product-card2">
+            <img
+              src="./Assets/images/Accordion-Pro-Filer-1x1-06_1.jpg"
+              alt="Product Image"
+              class="product-image2"
+            />
+            <a href="./product.html"
+              ><button class="add-to-cart-button2">Add to Cart</button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="product-tile2">
+        <img
+          src="./Assets/images/Everything-Desk-Pad-01.jpg"
+          alt="Product 1"
+          class="product-image2"
+        />
+        <div class="product-info2">
+          <h3 class="product-name2">Product 1</h3>
+          <div class="product-rating2">
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+          </div>
+          <div class="product-card2">
+            <img
+              src="./Assets/images/Everyday-Desk-Pad-Stop-Motion-01.gif"
+              alt="Product Image"
+              class="product-image2"
+            />
+            <a href="./product.html"
+              ><button class="add-to-cart-button2">Add to Cart</button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="product-tile2">
+        <img
+          src="./Assets/images/PK-D-PDP-Wallet-Dome-Navy-ATF-01-2x_14117993-bc68-43fc-9469-1e38db9cbd75.jpg"
+          alt="Product 1"
+          class="product-image2"
+        />
+        <div class="product-info2">
+          <h3 class="product-name2">Product 1</h3>
+          <div class="product-rating2">
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+            <span class="star2">&#9733;</span>
+          </div>
+          <div class="product-card2">
+            <img
+              src="./Assets/images/Dome-Wallet-Navy-Open.jpg"
+              alt="Product Image"
+              class="product-image2"
+            />
+            <a href="./product.html"
+              ><button class="add-to-cart-button2">Add to Cart</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pagination-container">
+      <ul class="pagination">
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1" aria-disabled="true"
+            >Previous</a
+          >
+        </li>
+        <li class="page-item active" aria-current="page">
+          <a class="page-link" href="#">1</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h4>Contact Us</h4>
+            <p>Email: contact@example.com</p>
+            <p>Phone: 123-456-7890</p>
+          </div>
+          <div class="col-md-6">
+            <h4>Follow Us</h4>
+            <ul class="social-icons">
+              <li>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

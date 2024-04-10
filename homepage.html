@@ -3,8 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Homepage</title>
+    <link rel="shortcut icon" href="./Assets/images/PK-favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     
@@ -13,14 +23,14 @@
     <img src="./Assets/images/pk-logotype-dark.png" alt="Logo">
   </div>
   <div class="menu">
-    <div class="menu-item">
-      <a href="#">Shop All<i class="fas fa-angle-down"></i></a>
-      <div class="dropdown-content">
-        <a href="#">Submenu 1</a>
-        <a href="#">Submenu 2</a>
-        <a href="#">Submenu 3</a>
-      </div>
-    </div>
+<div class="menu-item">
+  <a href="#">Shop All <i class="fas fa-angle-down"></i></a>
+  <div class="dropdown-content">
+    <a href="#">Submenu 1</a>
+    <a href="#">Submenu 2</a>
+    <a href="#">Submenu 3</a>
+  </div>
+</div>
     <div class="menu-item">
       <a href="#">Best Sellers<i class="fas fa-angle-down"></i></a>
       <div class="dropdown-content">
@@ -64,10 +74,29 @@
   </div>
 </div>
 
-<div class="hero-section">
-  <div class="hero-header">The Return of a Favorite</div>
-  <div class="hero-description">The spectrum Wall Planner in Vibrant and Earthy is back and ready to get you beautifully organized</div>
-  <a href="#" class="hero-button">Shop now</a>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="hero-section item active">
+      <div class="hero-header">The Return of a Favorite</div>
+      <div class="hero-description">The spectrum Wall Planner in Vibrant and Earthy is back and ready to get you beautifully organized</div>
+      <a href="#" class="hero-button">Shop now</a>
+    </div>
+    <div class="hero-section2 item">
+      <div class="hero-header2">Calming Colors</div>
+      <div class="hero-description2">Our bestselling planners are now available in our beautifully toned-down color palette, Earthy. Find grounding energy in these subdued shades while you’re journaling and planning.</div>
+      <a href="#" class="hero-button2">Shop New Arrivals</a>
+    </div>
+    <div class="hero-section3 item">
+      <div class="hero-header3">The Return of a Favorite</div>
+      <div class="hero-description3">The spectrum Wall Planner in Vibrant and Earthy is back and ready to get you beautifully organized</div>
+      <a href="#" class="hero-button3">Shop now</a>
+    </div>
+  </div>
 </div>
 
 
@@ -78,16 +107,15 @@
 </div>
 
 
-<div class="logos-container">
-  <div class="logo"><img src="./Assets/images/pk_bonapetit_light_be8fbea8-2469-4477-b664-a4a6c496060e.png" alt="Logo 1"></div>
-  <div class="logo"><img src="./Assets/images/pk_clever_light_29bcb1bf-ad02-4028-9257-39017b1a064a.png" alt="Logo 2"></div>
-  <div class="logo"><img src="./Assets/images/pk_design_milk_light_0bd5a3ed-db3f-4dc4-962a-51af0306a90b.png" alt="Logo 3"></div>
-  <!-- Add more logos as needed -->
-    <div class="logo"><img src="./Assets/images/pk_dwell_light_e9066291-3739-4bad-93a8-f9ea0b03d614.png" alt="Logo 4"></div>
-  <div class="logo"><img src="./Assets/images/pk_fortune_light_1dd32c88-f5dd-435e-9e67-262d70d28f70.png" alt="Logo 5"></div>
-  <div class="logo"><img src="./Assets/images/pk_people_light_8b7a0338-56dc-41f8-8c74-7a2b1df7dacd.png" alt="Logo 6"></div>
-  <div class="logo"><img src="./Assets/images/pk_people_light_8b7a0338-56dc-41f8-8c74-7a2b1df7dacd.png" alt="Logo 7"></div>
-  <div class="logo"><img src="./Assets/images/pk_strategist_light_d96fd43f-4355-46d6-937e-914b17400bcd.png" alt="Logo 8"></div>
+<div class="logos-container slider">
+  <div class="logo slide"><img src="./Assets/images/pk_bonapetit_light_be8fbea8-2469-4477-b664-a4a6c496060e.png" alt="Logo 1"></div>
+  <div class="logo slide"><img src="./Assets/images/pk_clever_light_29bcb1bf-ad02-4028-9257-39017b1a064a.png" alt="Logo 2"></div>
+  <div class="logo slide"><img src="./Assets/images/pk_design_milk_light_0bd5a3ed-db3f-4dc4-962a-51af0306a90b.png" alt="Logo 3"></div>
+    <div class="logo slide"><img src="./Assets/images/pk_dwell_light_e9066291-3739-4bad-93a8-f9ea0b03d614.png" alt="Logo 4"></div>
+  <div class="logo slide"><img src="./Assets/images/pk_fortune_light_1dd32c88-f5dd-435e-9e67-262d70d28f70.png" alt="Logo 5"></div>
+  <div class="logo slide"><img src="./Assets/images/pk_people_light_8b7a0338-56dc-41f8-8c74-7a2b1df7dacd.png" alt="Logo 6"></div>
+  <div class="logo slide"><img src="./Assets/images/pk_people_light_8b7a0338-56dc-41f8-8c74-7a2b1df7dacd.png" alt="Logo 7"></div>
+  <div class="logo slide"><img src="./Assets/images/pk_strategist_light_d96fd43f-4355-46d6-937e-914b17400bcd.png" alt="Logo 8"></div>
 </div>
 
 <div class="content-wrapper">
@@ -100,16 +128,157 @@
 
 
 <div class="product-list">
-  <img src="./Assets/images/pk_d_home_bis_poketo_x_headspace.jpeg" alt="Product 1" class="product-image">
-  <img src="./Assets/images/HeadspaceCollabPoketoandyield1940-pdpv1copia.jpg" alt="Product 2" class="product-image">
-   <img src="./Assets/images/PK-loveYourMindJournal-Product-1.jpeg" alt="Product 2" class="product-image">
+<div class="product-tile">
+  <img src="./Assets/images/1-PK-Headspace-MindfulnessCards.jpg" alt="Product 1" class="product-image">
+  <div class="product-info">
+    <h3 class="product-name">Headspace x Poketo Mindfulness Cards</h3>
+    <div class="product-rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+    </div>
+    <div class="product-card">
+      <img src="./Assets/images/PK-loveYourMindJournal-Product-1.jpeg" alt="Product Image" class="product-image">
+      <a href="./product.html"><button class="add-to-cart-button">Add to Cart</button></a>
+    </div>
+  </div>
 </div>
+
+
+<div class="product-tile">
+  <img src="./Assets/images/PK-MentalNotes-Product-1.jpeg" alt="Product 1" class="product-image">
+  <div class="product-info">
+    <h3 class="product-name">Headspace x Poketo Sticky Notes</h3>
+    <div class="product-rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+    </div>
+    <div class="product-card">
+      <img src="./Assets/images/PK-MentalNotes-Product-2.jpeg" alt="Product Image" class="product-image">
+      <a href="./product.html"><button class="add-to-cart-button">Add to Cart</button></a>
+    </div>
+  </div>
+</div>
+
+    <div class="product-tile">
+    <img src="./Assets/images/PK-loveYourMindJournal-Product-1.jpeg" alt="Product 1" class="product-image">
+    <div class="product-info">
+      <h3 class="product-name">Headspace x Poketo Journal</h3>
+      <div class="product-rating">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+      </div>
+    </div>
+        <div class="product-card">
+      <img src="./Assets/images/PK-loveYourMindJournal-Product-2.jpeg" alt="Product Image" class="product-image">
+      <a href="./product.html"><button class="add-to-cart-button">Add to Cart</button></a>
+    </div>
+  </div>
+
+<div class="product-tile">
+  <img src="./Assets/images/YieldXHeadspace-instantsunshine-product.jpeg" alt="Product 1" class="product-image">
+  <div class="product-info">
+    <h3 class="product-name">Headspace x Yield Instant Sunshine Candle</h3>
+    <div class="product-rating">
+      <span class="star">&#9733;</span>
+    </div>
+    <div class="product-card">
+      <img src="./Assets/images/HeadspaceCollabPoketoandyield1940-pdpv1copia.jpg" alt="Product Image" class="product-image">
+      <a href="./product.html"><button class="add-to-cart-button">Add to Cart</button></a>
+    </div>
+  </div>
+</div>
+
+<div class="product-tile">
+  <img src="./Assets/images/YieldXHeadspace-miniretreat-product.jpeg" alt="Product 1" class="product-image">
+  <div class="product-info">
+    <h3 class="product-name">Headspace x Yield Mini Retreat Candle</h3>
+    <div class="product-rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+    </div>
+    <div class="product-card">
+      <img src="./Assets/images/HeadspaceCollabPoketoandyield1940-pdpv1copia.jpg" alt="Product Image" class="product-image">
+      <a href="./product.html"><button class="add-to-cart-button">Add to Cart</button></a>
+    </div>
+  </div>
+</div>
+
+
+<div class="product-tile">
+  <img src="./Assets/images/YieldXHeadspace-unwindmind-product.jpeg" alt="Product 1" class="product-image">
+  <div class="product-info">
+    <h3 class="product-name">Headspace x Yield Unwind Your Mind Candle</h3>
+    <div class="product-rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+    </div>
+    <div class="product-card">
+      <img src="./Assets/images/HeadspaceCollabPoketoandyield1940-pdpv1copia.jpg" alt="Product Image" class="product-image">
+      <a href="./product.html"><button class="add-to-cart-button">Add to Cart</button></a>
+    </div>
+  </div>
+</div>
+
+<div class="product-tile">
+  <img src="./Assets/images/candles3.jpeg" alt="Product 1" class="product-image">
+  <div class="product-info">
+    <h3 class="product-name">Headspace x Yield Candle Trio</h3>
+    <div class="product-rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+    </div>
+    <div class="product-card">
+      <img src="./Assets/images/HeadspaceCollabPoketoandyield1940-pdpv1copia.jpg" alt="Product Image" class="product-image">
+      <a href="./product.html"><button class="add-to-cart-button">Add to Cart</button></a>
+    </div>
+  </div>
+</div>
+
+<div class="product-tile">
+  <img src="./Assets/images/PK-FeelItAllGelPens-Product-1.jpeg" alt="Product 1" class="product-image">
+  <div class="product-info">
+    <h3 class="product-name">Headspace x Poketo Pens</h3>
+    <div class="product-rating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+    </div>
+    <div class="product-card">
+      <img src="./Assets/images/PK-FeelItAllGelPens-Product-2.jpeg" alt="Product Image" class="product-image">
+      <a href="./product.html"><button class="add-to-cart-button">Add to Cart</button></a>
+    </div>
+  </div>
+</div>
+
+<div class="product-tile">
+  <img src="./Assets/images/PK-EverydayMindfulnessCalendar-Product-1.jpeg" alt="Product 1" class="product-image">
+  <div class="product-info">
+    <h3 class="product-name">Headspace x Poketo Calender</h3>
+    <div class="product-rating">
+      <span class="star">&#9733;</span>
+
+    </div>
+    <div class="product-card">
+      <img src="./Assets/images/PK-EverydayMindfulnessCalendar-Product-2.jpeg" alt="Product Image" class="product-image">
+      <a href="./product.html"><button class="add-to-cart-button">Add to Cart</button></a>
+    </div>
+  </div>
+</div>
+  </div>
 
 
 <div class="wrapper">
   <div class="content">
     <div class="header">A Fresh Dose of Color</div>
-    <div class="description">Say ‘goodbye’ to winter blues and ‘hello’ to spring brights with our new collection of planners and notebooks. These bold new colors will motivate you to plan and organize your life.</div>
+    <div class="text-wrap">Say ‘goodbye’ to winter blues and ‘hello’ to spring brights with our new collection of planners and notebooks. These bold new colors will motivate you to plan and organize your life.</div>
     <a href="#" class="button">Shop now</a>
   </div>
   <div class="image">
@@ -123,14 +292,14 @@
     <img src="./Assets/images/pk_evergreen_module_1.jpeg" alt="Image Content">
   </div>
   <div class="side-by-side-content">
-    <div class="side-by-side-header">Header Content</div>
-    <div class="side-by-side-description">This is the description text. You can add any text here.</div>
-    <a href="#" class="side-by-side-button">Button</a>
+    <div class="side-by-side-header">Style & Substance</div>
+    <div class="side-by-side-description">Stationery that’s beautiful and functional? It’s here.</div>
+    <a href="#" class="side-by-side-button">Shop Now</a>
   </div>
 </div>
 
 <div class="content-wrapper">
-  <div class="product-list-title">Product List</div>
+  <div class="product-list-title">Poketo’s Top Picks. Most-loved stationery and more from the Poketo community</div>
   <div class="slides-controller">
     <button></button>
     <button></button>
@@ -139,10 +308,330 @@
 
 
 <div class="product-list">
-  <img src="./Assets/images/pk_d_home_bis_poketo_x_headspace.jpeg" alt="Product 1" class="product-image">
-  <img src="./Assets/images/HeadspaceCollabPoketoandyield1940-pdpv1copia.jpg" alt="Product 2" class="product-image">
-   <img src="./Assets/images/PK-loveYourMindJournal-Product-1.jpeg" alt="Product 2" class="product-image">
+    <div class="product-tile">
+    <img src="./Assets/images/PK-loveYourMindJournal-Product-1.jpeg" alt="Product 1" class="product-image">
+    <div class="product-info">
+      <h3 class="product-name">Headspace x Poketo Journal</h3>
+      <div class="product-rating">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+      </div>
+    </div>
+        <div class="product-card">
+      <img src="./Assets/images/PK-loveYourMindJournal-Product-2.jpeg" alt="Product Image" class="product-image">
+      <a href="./product.html"><button class="add-to-cart-button">Add to Cart</button></a>
+    </div>
+  </div>
+
+      <div class="product-tile">
+    <img src="./Assets/images/Pk-SpectrumWallCalendar-printed--GIF.gif" alt="Product 1" class="product-image">
+    <div class="product-info">
+      <h3 class="product-name">Spectrum Wall Planner</h3>
+      <div class="product-rating">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+      </div>
+          <div class="product-card">
+      <img src="./Assets/images/PK-PDP-SpectrumWallPlanner-Gradient.jpg" alt="Product Image" class="product-image">
+      <a href="./product.html"><button class="add-to-cart-button">Add to Cart</button></a>
+    </div>
+    </div>
+  </div>
+
+      <div class="product-tile">
+    <img src="./Assets/images/earthy-mini-planner.gif" alt="Product 1" class="product-image">
+    <div class="product-info">
+      <h3 class="product-name">Spectrum Mini Planner</h3>
+      <div class="product-rating">
+        <span class="star">&#9733;</span>
+      </div>
+          <div class="product-card">
+      <img src="./Assets/images/PK-PDP-ATF-SpectrumMiniPlanner-earthy.jpeg" alt="Product Image" class="product-image">
+      <a href="./product.html"><button class="add-to-cart-button">Add to Cart</button></a>
+    </div>
+    </div>
+  </div>
+
+      <div class="product-tile">
+    <img src="./Assets/images/PK-ProjectPLanner-SpringCollection-Red-Front-Product.webp" alt="Product 1" class="product-image">
+    <div class="product-info">
+      <h3 class="product-name">Project Planner</h3>
+      <div class="product-rating">
+        <span class="star">&#9733;</span>
+      </div>
+          <div class="product-card">
+      <img src="./Assets/images/PK-ProjectPLanner-SpringCollection-Red-Back-Product.jpeg" alt="Product Image" class="product-image">
+      <a href="./product.html"><button class="add-to-cart-button">Add to Cart</button></a>
+    </div>
+    </div>
+  </div>
+
+      <div class="product-tile">
+    <img src="./Assets/images/PK-ConceptPLanner-SpringCollection-Blocks-Front-Product.webp" alt="Product 1" class="product-image">
+    <div class="product-info">
+      <h3 class="product-name">Concept Planner</h3>
+      <div class="product-rating">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+      </div>
+               <div class="product-card">
+      <img src="./Assets/images/PK-ConceptPLanner-SpringCollection-Blocks-Back-Product.jpeg" alt="Product Image" class="product-image">
+      <a href="./product.html"><button class="add-to-cart-button">Add to Cart</button></a>
+    </div>
+    </div>
+  </div>
+
+  <div class="product-tile">
+  <img src="./Assets/images/Accordion-Folder-Large-Black-01_1.jpg" alt="Product 1" class="product-image">
+    <div class="product-info">
+      <h3 class="product-name">Accoridian Pro Filer</h3>
+      <div class="product-rating">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+      </div>
+               <div class="product-card">
+      <img src="./Assets/images/Accordion-Pro-Filer-1x1-06_1.jpg" alt="Product Image" class="product-image">
+      <a href="./product.html"><button class="add-to-cart-button">Add to Cart</button></a>
+    </div>
+    </div>
+  </div>
+
+        <div class="product-tile">
+    <img src="./Assets/images/Everything-Desk-Pad-01.jpg" alt="Product 1" class="product-image">
+    <div class="product-info">
+      <h3 class="product-name">Everything Desk Pad</h3>
+      <div class="product-rating">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+      </div>
+               <div class="product-card">
+      <img src="./Assets/images/Everyday-Desk-Pad-Stop-Motion-01.gif" alt="Product Image" class="product-image">
+      <a href="./product.html"><button class="add-to-cart-button">Add to Cart</button></a>
+    </div>
+    </div>
+  </div>
+
+          <div class="product-tile">
+    <img src="./Assets/images/PK-doublewall-groovycup-product-teal.jpeg" alt="Product 1" class="product-image">
+    <div class="product-info">
+      <h3 class="product-name">Double Wall Groovy Cup</h3>
+      <div class="product-rating">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+      </div>
+               <div class="product-card">
+      <img src="./Assets/images/PK-Lookbook-FW23-Glassware-GroovyCup-Teal-hand_copy.jpeg" alt="Product Image" class="product-image">
+      <a href="./product.html"><button class="add-to-cart-button">Add to Cart</button></a>
+    </div>
+    </div>
+  </div>
+
+          <div class="product-tile">
+    <img src="./Assets/images/PK-doublewall-mug-product-teal.jpeg" alt="Product 1" class="product-image">
+    <div class="product-info">
+      <h3 class="product-name">Double Wall Mug</h3>
+      <div class="product-rating">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+      </div>
+               <div class="product-card">
+      <img src="./Assets/images/PK-Lookbook-FW23-Glassware-DoubleWallMug-Teal_TEA_copy.jpeg" alt="Product Image" class="product-image">
+      <a href="./product.html"><button class="add-to-cart-button">Add to Cart</button></a>
+    </div>
+    </div>
+  </div>
+
+        <div class="product-tile">
+    <img src="./Assets/images/PK-D-PDP-Wallet-Dome-Navy-ATF-01-2x_14117993-bc68-43fc-9469-1e38db9cbd75.jpg" alt="Product 1" class="product-image">
+    <div class="product-info">
+      <h3 class="product-name">Dome Wallet</h3>
+      <div class="product-rating">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+      </div>
+               <div class="product-card">
+      <img src="./Assets/images/Dome-Wallet-Navy-Open.jpg" alt="Product Image" class="product-image">
+      <a href="./product.html"><button class="add-to-cart-button">Add to Cart</button></a>
+    </div>
+    </div>
+  </div>
+  </div>
+
+
+<div class="wrapper3">
+  <div class="content3">
+    <div class="header3">A Fresh Dose of Color</div>
+    <div class="description3">Say ‘goodbye’ to winter blues and ‘hello’ to spring brights with our new collection of planners and notebooks. These bold new colors will motivate you to plan and organize your life.</div>
+    <a href="#" class="button3">Shop now</a>
+  </div>
+  <div class="image3">
+    <img src="./Assets/images/pk_5050_store.jpeg" alt="Image Content">
+  </div>
 </div>
 
+<div class="side-by-side-wrapper4">
+  <div class="side-by-side-image4">
+    <img src="./Assets/images/XPB-M-Home-5050-Media-PatternFamily-01-2x.jpg" alt="Image Content">
+  </div>
+  <div class="side-by-side-content4">
+    <div class="side-by-side-header4">A Pattern Family of Brands</div>
+    <div class="side-by-side-description4">We’re a collective of brands guided by one purpose: to make home more beautiful and more functional, room by room. Our products are thoughtfully designed to turn everyday motions into intentional, enjoyable rituals of everyday living.</div>
+    <a href="#" class="side-by-side-button4">Learn More</a>
+  </div>
+</div>
+
+<div class="rich-text-wrapper">
+  <span class="centered-header">Art For Your Every Day</span>
+</div>
+
+<div class="rich-text-wrapper1">
+  <span class="centered-header1">@poketo</span>
+</div>
+
+
+
+<div class="row justify-content-around">
+  <div class="col-md-2">
+    <div class="video-container">
+      <video autoplay muted loop class="video-fluid">
+        <source src="./Assets/EC418ACAE6F2B0D13F312762C1B82985_video_dashinit.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+  <div class="col-md-2"><img src="Assets/images/pencil.jpg" class="img-fluid book-img"></div>
+  <div class="col-md-2"><img src="Assets/images/calender.jpg" class="img-fluid book-img"></div>
+  <div class="col-md-2"><img src="Assets/images/calender2.jpg" class="img-fluid book-img"></div>
+  <div class="col-md-2"><img src="Assets/images/bottles.jpg" class="img-fluid book-img"></div>
+  <div class="col-md-2"><img src="Assets/images/cup.jpg" class="img-fluid book-img"></div>
+
+    <div class="col-md-2">
+    <div class="video-container">
+      <video autoplay muted loop class="video-fluid">
+        <source src="./Assets/18411EB0427C6318C22C5D3BC6550884_video_dashinit.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+
+  <div class="col-md-2"><img src="Assets/images/book.jpg" class="img-fluid book-img"></div>
+    <div class="col-md-2">
+    <div class="video-container">
+      <video autoplay muted loop class="video-fluid">
+        <source src="./Assets/83425DE4B1F7FE589B0E12F03BADD19F_video_dashinit.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+      <div class="col-md-2">
+    <div class="video-container">
+      <video autoplay muted loop class="video-fluid">
+        <source src="./Assets/C84B151A676AE7EFF2EA10D96E9289A8_video_dashinit.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>  
+
+  <div class="col-md-2"><img src="Assets/images/book2.jpg" class="img-fluid book-img"></div>
+    <div class="col-md-2">
+    <div class="video-container">
+      <video autoplay muted loop class="video-fluid">
+        <source src="./Assets/2842B368AE83DA039CD9B450C61FA384_video_dashinit.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</div>
+ 
+<footer class="small bg-light">
+      <div class="container py-3 py-sm-5">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-3">
+            <h6>Quick links</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">What's new</a></li>
+              <li><a href="#">Featured Product</a></li>
+              <li><a href="#">News letter</a></li>
+              <li><a href="#">My account</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3">
+            <h6>Information</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Membership</a></li>
+              <li><a href="#">Shipping &amp; returns</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3">
+            <h6>Follow us</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">YouTube</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3">
+            <address>
+              <strong>BIET Jhansi</strong><br />
+              Panchwati Hostel<br />
+              Jhansi, Uttar Pradesh<br />
+              <abbr title="Telephone">T:</abbr
+              ><a href="tel:+919876543210">(987) 654-3210</a><br />
+              <abbr title="Mail">M:</abbr
+              ><a href="mailto:info@domain.com">info@domain.com</a>
+            </address>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-9">
+            <ul class="list-inline">
+              <li class="list-inline-item">&copy; 2017 Web Company, Inc.</li>
+              <li class="list-inline-item">All rights reserved.</li>
+              <li class="list-inline-item">
+                <a href="#">Terms of use and privacy policy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="dropdown dropup p-0">
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm dropdown-toggle"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Visit other sites:
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a href="#" class="dropdown-item">www.otherwebsite.com</a>
+                <a href="#" class="dropdown-item">www.newwebsite.com</a>
+                <a href="#" class="dropdown-item">www.oldwebsite.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
 </body>
+<script src="./JS/script.js"></script>
 </html>

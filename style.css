@@ -1269,3 +1269,36 @@ video::-webkit-media-controls {
 .dropdown-menu {
     background-color: #f0f0f0;
 }
+
+
+
+/* checkout */
+.bg-lightblue {
+    background-color: lightblue;
+}
+
+.express-checkouts-wrapper .btn {
+    margin: 10px;
+    width: 180px;
+    height: 55px;
+    overflow: hidden;
+}
+
+.express-checkouts-wrapper .btn img {
+    max-width: 80%;
+    max-height: 180%;
+    margin-top: -16px;
+}
+
+.contact-container {
+  max-height: 200px; 
+  overflow-y: auto; 
+}
+
+.login-link {
+    margin-right: 20px;
+}
+
+.h2{
+    overflow: hidden;
+}

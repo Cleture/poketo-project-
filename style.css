@@ -1302,3 +1302,28 @@ video::-webkit-media-controls {
 .h2{
     overflow: hidden;
 }
+
+.credit-card-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.circle-selector {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons-container img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}

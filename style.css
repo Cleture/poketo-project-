@@ -1327,3 +1327,81 @@ video::-webkit-media-controls {
     height: auto;
     margin-right: 10px;
 }
+
+/* form */
+.form {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.form-container {
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-header h2 {
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+.form-container p {
+    color: gray;
+    font-size: 14px;
+}
+
+.form-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 5px;
+    border: 1px solid #dedede;
+    outline: none;
+    display: block;
+}
+
+.form button {
+    text-align: center;
+    display: inline-block;
+    padding: 10px 20px;
+    background: #010145;
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+}
+
+.form-group p {
+    margin-top: 10px;
+    color: gray;
+}
+
+.grid .form-group {
+    margin-bottom: 20px;
+}

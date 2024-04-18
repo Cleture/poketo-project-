@@ -1329,7 +1329,7 @@ video::-webkit-media-controls {
 }
 
 /* form */
-.form {
+/* .form {
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -1404,4 +1404,25 @@ video::-webkit-media-controls {
 
 .grid .form-group {
     margin-bottom: 20px;
+} */
+
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.login-form {
+    width: 400px;
+}
+
+.login-form h2 {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.btn-primary {
+    border: 30px solid #007bff;
 }

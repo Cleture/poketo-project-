@@ -1426,3 +1426,63 @@ video::-webkit-media-controls {
 .btn-primary {
     border: 30px solid #007bff;
 }
+
+.footer {
+    background-color: #0085CA;
+    padding: 50px 0;
+}
+
+.footer img {
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.footer p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.footer h5 {
+    font-size: 18px;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+}
+
+.footer .list-unstyled li {
+    margin-bottom: 10px;
+    /* Add space between list items */
+}
+
+.footer .list-unstyled li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer .list-unstyled li a:hover {
+    color: #007bff;
+}
+
+.social-icons {
+    text-align: center;
+    margin-left: 900px;
+}
+
+.social-icons a {
+    display: inline-block;
+    /* Make icons appear horizontally */
+    color: #ffffff;
+    font-size: 24px;
+    margin-right: 10px;
+    /* Adjust spacing between icons */
+}
+
+.social-icons a:last-child {
+    margin-right: 0;
+    /* Remove margin from last icon */
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}

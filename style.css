@@ -1452,7 +1452,6 @@ video::-webkit-media-controls {
 
 .footer .list-unstyled li {
     margin-bottom: 10px;
-    /* Add space between list items */
 }
 
 .footer .list-unstyled li a {
@@ -1471,16 +1470,13 @@ video::-webkit-media-controls {
 
 .social-icons a {
     display: inline-block;
-    /* Make icons appear horizontally */
     color: #ffffff;
     font-size: 24px;
     margin-right: 10px;
-    /* Adjust spacing between icons */
 }
 
 .social-icons a:last-child {
     margin-right: 0;
-    /* Remove margin from last icon */
 }
 
 .social-icons a:hover {

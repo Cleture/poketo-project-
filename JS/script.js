@@ -1,3 +1,5 @@
+const { url } = require("inspector");
+
 $(document).ready(function () {
     $('.logos-container').slick({
         slidesToShow: 6,
@@ -20,6 +22,8 @@ $(document).ready(function () {
         }]
     });
 
+
+
     function incrementQuantity() {
         var input = document.querySelector('.quantity-input');
         var value = parseInt(input.value);
@@ -36,10 +40,8 @@ $(document).ready(function () {
 });
 
 function toggleActive(element) {
-    // Remove active class from all icons
     const icons = document.querySelectorAll('.icon');
     icons.forEach(icon => icon.classList.remove('active-icon'));
 
-    // Add active class to the clicked icon
     element.classList.add('active-icon');
 }

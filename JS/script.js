@@ -34,3 +34,12 @@ $(document).ready(function () {
         }
     }
 });
+
+function toggleActive(element) {
+    // Remove active class from all icons
+    const icons = document.querySelectorAll('.icon');
+    icons.forEach(icon => icon.classList.remove('active-icon'));
+
+    // Add active class to the clicked icon
+    element.classList.add('active-icon');
+}

@@ -21,10 +21,7 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -32,17 +29,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="navbar">
       <div class="poketo-logo">
         <a href="./homepage.html"
-          ><img src="./Assets/images/pk-logotype-dark.png" alt="Logo"
-        / style="max-height: 40px; margin-left: 0;" ></a>
+          ><img src="./Assets/images/pk-logotype-dark.png" alt="Logo" /
+          style="max-height: 40px; margin-left: 0;" ></a
+        >
       </div>
-
-
 
       <!-- <div class="icons">
         <a href="./lgoin.html">        <i class="fas fa-user">
@@ -53,57 +49,133 @@
         /></i>
       </div> -->
     </div>
-<div class="login-container" style="height: 90vh;">
-  <div class="login-form">
-    <h2 class="text-center font-weight-bold" style="font-size: 46px;">Merchant account</h2>
-    <h4 class="text-center font-weight-bold">A merchant is a person who trades in commodities produced by other people, especially one who trades with foreign countries.</h4>
+    <div class="login-container" style="height: 151vh; padding: 0px">
+      <div class="login-form">
+        <h2 class="text-center font-weight-bold" style="font-size: 46px">
+          Merchant account
+        </h2>
+        <h4 class="text-center font-weight-bold">
+          A merchant is a person who trades in commodities produced by other
+          people, especially one who trades with foreign countries.
+        </h4>
 
-    <form>
-      <div class="form-group">
-        <input type="text" class="form-control" id="fname" aria-describedby="fnameHelp" placeholder="First Name">
-      </div>
-
-      <div class="form-group">        
-        <input type="text" class="form-control" id="lname" aria-describedby="lnmaeHelp" placeholder="Last Name">
-      </div>
-
-      <div class="form-group">                
-        <input type="text" class="form-control" id="sname" aria-describedby="snmaeHelp" placeholder="Shop Name">
-      </div>
-
-      <div class="form-group">
-        <input type="text" class="form-control" id="description" aria-describedby="descriptionHelp" placeholder="Description">
-      </div>
-
-<div class="row mt-3">
-  <div class="col-md-12 text-center">
-    <img src="./Assets/images/affirm-logo-2.avif" alt="Home Icon" class="icon" style="max-width: 75px; max-height: 75px; cursor: pointer;" onclick="toggleActive(this)">
-    <img src="./Assets/images/Fortune_Logo.png" alt="Envelope Icon" class="icon" style="max-width: 75px; max-height: 75px; cursor: pointer;" onclick="toggleActive(this)">
-    <img src="./Assets/images/Dwell_logo.png" alt="Phone Icon" class="icon" style="max-width: 75px; max-height: 75px; cursor: pointer;" onclick="toggleActive(this)">
-    <img src="./Assets/images/clever_logo.jpeg" alt="Globe Icon" class="icon" style="max-width: 75px; max-height: 75px; cursor: pointer;" onclick="toggleActive(this)">
-    <img src="./Assets/images/bonappetit_logo.png" alt="Star Icon" class="icon" style="max-width: 75px; max-height: 75px; cursor: pointer;" onclick="toggleActive(this)">
-  </div>
-</div>
-
+        <form id="merchant-form">
           <div class="form-group">
-            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+            <label for="fname">First Name:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="fname"
+              placeholder="Enter your first name"
+              required
+            />
           </div>
 
           <div class="form-group">
-        <input type="text" class="form-control" id="phone" aria-describedby="phoneHelp" placeholder="Phone Number">
+            <label for="lname">Last Name:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="lname"
+              placeholder="Enter your last name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="phone"
+              placeholder="Enter your phone number"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="store-name">Store Name:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="store-name"
+              placeholder="Enter your store name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea
+              class="form-control"
+              id="description"
+              rows="3"
+              placeholder="Enter a brief description of your store"
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="icon">Icon (URL):</label>
+            <input
+              type="text"
+              class="form-control"
+              id="icon"
+              placeholder="Enter URL for your store icon"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="banner">Banner (URL):</label>
+            <input
+              type="text"
+              class="form-control"
+              id="banner"
+              placeholder="Enter URL for your store banner"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="additional-phones"
+              >Additional Phone Numbers (comma-separated):</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="additional-phones"
+              placeholder="Enter additional phone numbers"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              placeholder="Enter a password"
+              required
+            />
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block" id="btn">
+            Create
+          </button>
+        </form>
+      </div>
     </div>
 
-      <div class="form-group">
-        <input type="password" class="form-control" id="password" placeholder="Password">
-      </div>
-
-      <button type="submit" class="btn btn-primary btn-block" id="btn" style="border-radius: 100px; padding: 15px; font-size: 16px;">Create</button>
-    </form>
-  </div>
-</div>
-
-
-<!-- <footer class="footer">
+    <!-- <footer class="footer">
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
@@ -167,73 +239,81 @@
   </div>
 </footer> -->
 
-<footer class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <img src="./Assets/images/pk-logotype-light.png" alt="Footer Logo">
-      </div>
-    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <img
+              src="./Assets/images/pk-logotype-light.png"
+              alt="Footer Logo"
+            />
+          </div>
+        </div>
 
-    <div class="row mt-4">
-      <div class="col-md-2">
-        <ul class="list-unstyled custom-list">
-          <li><h5>SHOP</h5></li>
-          <li><a href="#">Shop all</a></li>
-          <li><a href="#">Best Sellers</a></li>
-          <li><a href="#">Stationary</a></li>
-          <li><a href="#">Home Decor</a></li>
-          <li><a href="#">Gift Cards</a></li>
-        </ul>
-      </div>
+        <div class="row mt-4">
+          <div class="col-md-2">
+            <ul class="list-unstyled custom-list">
+              <li><h5>SHOP</h5></li>
+              <li><a href="#">Shop all</a></li>
+              <li><a href="#">Best Sellers</a></li>
+              <li><a href="#">Stationary</a></li>
+              <li><a href="#">Home Decor</a></li>
+              <li><a href="#">Gift Cards</a></li>
+            </ul>
+          </div>
 
-            <div class="col-md-2">
-        <ul class="list-unstyled">
-          <li><h5>LEARN</h5></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Career</a></li>
-        </ul>
-      </div>
+          <div class="col-md-2">
+            <ul class="list-unstyled">
+              <li><h5>LEARN</h5></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Career</a></li>
+            </ul>
+          </div>
 
-            <div class="col-md-2">
-        <ul class="list-unstyled">
-          <li><h5>HELP</h5></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Supplemental Privacy Policy</a></li>
-          <li><a href="#">My account</a></li>
-        </ul>
-      </div>
+          <div class="col-md-2">
+            <ul class="list-unstyled">
+              <li><h5>HELP</h5></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Supplemental Privacy Policy</a></li>
+              <li><a href="#">My account</a></li>
+            </ul>
+          </div>
 
-      <div class="col-md-2">
-        <ul class="list-unstyled">
-          <li><h5>CONNECT</h5></li>
-          <li><a href="#">Affiliate Program</a></li>
-          <li><a href="#">Wholesale</a></li>
-          <li><a href="#">Acquisitions</a></li>
-          <li><a href="#">Customization</a></li>
-          <li><a href="#">Store Location</a></li>
-        </ul>
-      </div>
+          <div class="col-md-2">
+            <ul class="list-unstyled">
+              <li><h5>CONNECT</h5></li>
+              <li><a href="#">Affiliate Program</a></li>
+              <li><a href="#">Wholesale</a></li>
+              <li><a href="#">Acquisitions</a></li>
+              <li><a href="#">Customization</a></li>
+              <li><a href="#">Store Location</a></li>
+            </ul>
+          </div>
 
-      <div class="col-md-2">
-        <ul class="list-unstyled">
-          <li><h5>JOIN OUR FAMILY</h5></li>
-          <li><a href="#">Sign up for our Poketo newsletter and receive 10% off your first purchase. You'll be the first to hear about new arrivals, surprise savings, and more.</a></li>
-        </ul>
-      </div>
-      
-    </div>
-    
-                <div class="social-icons mt-3">
+          <div class="col-md-2">
+            <ul class="list-unstyled">
+              <li><h5>JOIN OUR FAMILY</h5></li>
+              <li>
+                <a href="#"
+                  >Sign up for our Poketo newsletter and receive 10% off your
+                  first purchase. You'll be the first to hear about new
+                  arrivals, surprise savings, and more.</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="social-icons mt-3">
           <a href="#"><i class="fab fa-facebook"></i></a>
           <a href="#"><i class="fab fa-twitter"></i></a>
           <a href="#"><i class="fab fa-instagram"></i></a>
           <a href="#"><i class="fab fa-pinterest"></i></a>
           <a href="#"><i class="fab fa-linkedin"></i></a>
         </div>
-  </div>
-</footer>
+      </div>
+    </footer>
   </body>
   <script src="./JS/register.js"></script>
 </html>

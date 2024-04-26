@@ -1409,10 +1409,10 @@ video::-webkit-media-controls {
 
 
 .login-container {
-    display: flex;
+    display: ruby-text;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    overflow: hidden;
 }
 
 .login-form {

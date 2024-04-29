@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Merchant Account - Poketo</title>
+    <link
+      rel="shortcut icon"
+      href="./Assets/images/PK-favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./dash.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet">
+                      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+<header>
+        <div>
+            <img src="./Assets/images/pk-logotype-dark.png" alt="Logo" height="40">
+            <h1>Welcome to Your Dashboard</h1>
+        </div>
+        <button id="logoutBtn">Logout</button>
+    </header>
+
+    <main>
+        <section id="categoryForm">
+            <h2>Create a Category</h2>
+            <form id="createCategoryForm">
+                <label for="categoryName">Category Name:</label>
+                <input type="text" id="categoryName" name="categoryName" required>
+                <label for="categoryImage">Category Image URL:</label>
+                <input type="text" id="categoryImage" name="categoryImage" required>
+                <button type="submit">Create Category</button>
+            </form>
+        </section>
+
+        <section id="categoryList">
+            <h2>Categories</h2>
+            <div id="productCards"></div>
+            <ul id="categories"></ul>
+        </section>
+    </main>
+    <!-- Include any necessary JavaScript files here -->
+</body>
+<script src="./JS/dashboard.js"></script>
+</html>

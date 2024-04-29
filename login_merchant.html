@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Merchant Account - Poketo</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link
       rel="shortcut icon"
       href="./Assets/images/PK-favicon.png"
@@ -20,9 +21,7 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -30,6 +29,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="navbar">
@@ -49,42 +49,47 @@
         /></i>
       </div> -->
     </div>
-    <div class="login-container" style="height: 40vh">
-      <div class="login-form">
-        <h2 class="text-center font-weight-bold" style="font-size: 46px">
-          Login
-        </h2>
-        <form>
-          <div class="form-group">
-            <input
-              type="email"
-              class="form-control"
-              id="email"
-              aria-describedby="emailHelp"
-              placeholder="Enter email"
-            />
-          </div>
-
-          <div class="form-group">
-            <input
-              type="password"
-              class="form-control"
-              id="password"
-              placeholder="Password"
-            />
-          </div>
-
-          <button
-            type="submit"
-            id="login-btn"
-            class="btn btn-primary btn-block"
-            style="border-radius: 100px; padding: 15px; font-size: 16px"
-          >
+<div class="login-container" style="height: 49vh">
+    <div class="login-form">
+        <h2 class="text-center font-weight-bold" style="font-size: 50px">
             Login
-          </button>
+        </h2>
+        <form id="login-form">
+            <div class="form-group">
+                <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    aria-describedby="emailHelp"
+                    placeholder="Enter email"
+                />
+            </div>
+
+            <div class="form-group">
+                <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    placeholder="Password"
+                />
+            </div>
+
+            <button
+                type="submit"
+                id="login-btn"
+                class="btn btn-primary btn-block"
+                style="border-radius: 6px; padding: 15px; font-size: 16px"
+            >
+                Login
+            </button>
+
+            <a href="./update_merchant.html" id="update-btn" class="btn btn-success btn-block" style="border-radius: 6px; padding: 6px; font-size: 16px; width: 100px; margin-left: 300px;">
+                Update Info
+            </a>
+            <p class="text-center mt-3">Don't have an account? <a href="./merchant.html">Create account</a></p>
         </form>
-      </div>
     </div>
+</div>
 
     <!-- <footer class="footer">
   <div class="container">
@@ -217,11 +222,21 @@
         </div>
 
         <div class="social-icons mt-3">
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-pinterest"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"
+            ><i class="fab fa-facebook" style="overflow: hidden"></i
+          ></a>
+          <a href="#"
+            ><i class="fab fa-twitter" style="overflow: hidden"></i
+          ></a>
+          <a href="#"
+            ><i class="fab fa-instagram" style="overflow: hidden"></i
+          ></a>
+          <a href="#"
+            ><i class="fab fa-pinterest" style="overflow: hidden"></i
+          ></a>
+          <a href="#"
+            ><i class="fab fa-linkedin" style="overflow: hidden"></i
+          ></a>
         </div>
       </div>
     </footer>

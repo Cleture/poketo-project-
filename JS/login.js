@@ -1,17 +1,32 @@
-$.document.ready(function () {
-    $("#login-btn").click(function (e) {
-        e.preventDefault();
-        let login_email = $("#email");
-        let login_pass = $("#password");
+$(document).ready(function () {
+    $('#login-form').submit(function (event) {
+        event.preventDefault();
 
-        if (login_email.val() == "" || login_pass.val() == "") {
-            alert("Email and Password Are Required");
-            return;
-        }
+        var email = $('#email').val();
+        var password = $('#password').val();
+
+        var formData = {
+            email,
+            password
+        };
 
         $.ajax({
+            type: "POST",
             url: "http://ecommerce.reworkstaging.name.ng/v2/merchants/login",
-            method: "POST",
-        })
-    })
-})
+            data: formData,
+            success: function (response) {
+                var merchantEmail = response.email;
+                var merchantId = response.id;
+                alert("Processing.....");
+                alert("Done!!");
+                alert("Login successful!" + merchantEmail + "ID: " + merchantId);
+                localStorage.setItem('OurMerchant_user', merchantId)
+                window.location.href = "./dashboard.html";
+            },
+            error: function (xhr, status, error) {
+                alert("Login failed! Please try again.");
+            }
+        });
+    });
+});
+

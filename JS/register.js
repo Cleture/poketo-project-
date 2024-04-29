@@ -25,7 +25,7 @@ $(document).ready(function () {
             data: JSON.stringify(merchantData),
             success: function (response) {
                 alert("Merchant account created successfully!");
-                window.location.href = 'login_merchant.html'
+                window.location.href = "./login_merchant.html"
                 console.log(response);
             },
             error: function (err) {

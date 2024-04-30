@@ -1686,79 +1686,77 @@ video::-webkit-media-controls {
     right: -10px;
 }
 
-
-/* Form Styles */
-.form {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.form_container {
-    width: 80%;
-    max-width: 500px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-
-.form-header h3 {
-    font-weight: 600;
-    font-size: 50px;
-    margin-bottom: 10px;
-    color: #333333;
-}
-
-.form-header p {
-    color: #666666;
-    font-size: 14px;
-}
-
-.form_group {
-    margin-bottom: 20px;
-}
-
-.form_group label {
-    font-size: 16px;
-    color: #333333;
-    margin-bottom: 5px;
-    display: block;
-}
-
-.form_group input,
-.form_group select,
-.form_group textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-    font-size: 16px;
-    color: #666666;
-    outline: none;
-    transition: border-color 0.3s ease;
-}
-
-.form_group input:focus,
-.form_group select:focus,
-.form_group textarea:focus {
-    border-color: #6c63ff;
-}
-
-button#blogBtn {
-    width: 100%;
-    padding: 12px;
-    background-color: #6c63ff;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button#blogBtn:hover {
-    background-color: #544bd2;
-}
+                .form {
+                    min-height: 100vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+        
+                .form_container {
+                    width: 80%;
+                    max-width: 1000px;
+                    margin: 20px auto;
+                    padding: 20px;
+                    background-color: #ffffff;
+                    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+                    border-radius: 10px;
+                }
+        
+                .form-header h3 {
+                    font-weight: 600;
+                    font-size: 50px;
+                    margin-bottom: 10px;
+                    color: #333333;
+                }
+        
+                .form-header p {
+                    color: #666666;
+                    font-size: 14px;
+                }
+        
+                .form_group {
+                    margin-bottom: 20px;
+                }
+        
+                .form_group label {
+                    font-size: 16px;
+                    color: #333333;
+                    margin-bottom: 5px;
+                    display: block;
+                }
+        
+                .form_group input,
+                .form_group select,
+                .form_group textarea {
+                    width: 100%;
+                    padding: 12px;
+                    border: 1px solid #cccccc;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    color: #666666;
+                    outline: none;
+                    transition: border-color 0.3s ease;
+                }
+        
+                .form_group input:focus,
+                .form_group select:focus,
+                .form_group textarea:focus {
+                    border-color: #6c63ff;
+                }
+        
+                button#blogBtn {
+                    width: 100%;
+                    padding: 12px;
+                    background-color: #6c63ff;
+                    color: #ffffff;
+                    border: none;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+                }
+        
+                button#blogBtn:hover {
+                    background-color: #544bd2;
+                }

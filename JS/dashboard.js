@@ -1,25 +1,29 @@
 $(document).ready(function () {
-    // Check if user is logged in
+    $("#showCategoryFormBtn").click(function () {
+        $("#categoryForm").show();
+    });
+
+    $("#closeCategoryFormBtn").click(function () {
+        $("#categoryForm").hide();
+    });
+
     let loggedUser = localStorage.getItem("OurMerchant_user");
     if (!loggedUser) {
-        // Redirect or show login prompt if user is not logged in
         alert("Please log in to access the dashboard.");
-        window.location.href = "./login_merchant.html"; // Redirect to login page
-        return; // Stop further execution
+        window.location.href = "./login_merchant.html"; 
+        return;
     }
 
-    // Form submission event handler
     $("#createCategoryForm").submit(function (e) {
-        e.preventDefault(); // Prevent the default form submission
+        e.preventDefault(); 
 
-        // Get form data
+      
         let formData = {
-            merchant_id: "662fcfc1f7192e0c5d709b4b", // Replace with the actual merchant ID
-            name: $("#categoryName").val(),
-            image: $("#categoryImage").val()
+            merchant_id: "662fcfc1f7192e0c5d709b4b", 
+            name: $("#categoryName").val()
         };
 
-        // Send AJAX request to create category
+       
         $.ajax({
             url: "http://ecommerce.reworkstaging.name.ng/v2/categories",
             method: "POST",
@@ -27,10 +31,7 @@ $(document).ready(function () {
             contentType: "application/json",
             success: function (response) {
                 alert("Category created successfully");
-                // Clear the form fields
                 $("#categoryName").val("");
-                $("#categoryImage").val("");
-                // Add the newly created category to the list
                 addCategoryToList(response);
             },
             error: function (err) {
@@ -40,59 +41,20 @@ $(document).ready(function () {
         });
     });
 
-    // Function to add a category to the list
     function addCategoryToList(category) {
         $("#categories").append(`<li>${category.name}</li>`);
     }
 
-    // Logout button click event handler
     $("#logoutBtn").click(function () {
-        // Clear user session data and redirect to login page
         localStorage.removeItem("OurMerchant_user");
         alert("Logout successful");
         window.location.href = "../pages/login.html"; // Redirect to login page
     });
 
-    // Call a function to fetch and display existing categories
     fetchAndDisplayCategories();
 });
 
-// Function to fetch and display existing categories
-function fetchAndDisplayCategories() {
-    // Implement logic to fetch categories from the backend and display them on the dashboard
-    // This function can be called on page load to show existing categories
 
-    function createProductCard(category) {
-        const productCardsContainer = document.getElementById('productCards');
-        const productCard = document.createElement('div');
-        productCard.classList.add('product-card');
-
-        const image = document.createElement('img');
-        image.classList.add('product-image');
-        image.src = category.image;
-        image.alt = category.name;
-        productCard.appendChild(image);
-
-        const name = document.createElement('div');
-        name.classList.add('product-name');
-        name.textContent = category.name;
-        productCard.appendChild(name);
-
-        productCardsContainer.appendChild(productCard);
-    }
-
-    // Mock category data
-    const categories = [
-        { name: 'Category 1', image: 'https://via.placeholder.com/150' },
-        { name: 'Category 2', image: 'https://via.placeholder.com/150' },
-        { name: 'Category 3', image: 'https://via.placeholder.com/150' }
-        // Add more categories as needed
-    ];
-
-    // Display categories as product cards
-    categories.forEach(createProductCard);
-
-}
 
 
 

@@ -19,25 +19,28 @@
 
 </head>
 <body>
-<header>
-        <div>
-            <img src="./Assets/images/pk-logotype-dark.png" alt="Logo" height="40">
-            <h1>Welcome to Your Dashboard</h1>
+          <nav class="nav">
+        <a href="/" class="blog_logo"><img src="./Assets/images/pk-logotype-dark.png" alt="Logo" /></a>
+        <input type="text" placeholder="Search..." />
+        <div class="blog_links" id="blog_links">
+          <a href="./create_category.html" class="blog_create">
+            <img src="./Assets/images/image-gallery.png" alt="Add Blog" />
+          </a>
         </div>
-        <button id="logoutBtn">Logout</button>
-    </header>
+      </nav>
 
     <main>
-        <section id="categoryForm">
-            <h2>Create a Category</h2>
-            <form id="createCategoryForm">
-                <label for="categoryName">Category Name:</label>
-                <input type="text" id="categoryName" name="categoryName" required>
-                <label for="categoryImage">Category Image URL:</label>
-                <input type="text" id="categoryImage" name="categoryImage" required>
-                <button type="submit">Create Category</button>
-            </form>
-        </section>
+<section id="categoryForm" style="display: none;">
+    <button id="closeCategoryFormBtn">X</button>
+    <h2>Create a Category</h2>
+    <form id="createCategoryForm">
+        <label for="categoryName">Category Name:</label>
+        <input type="text" id="categoryName" name="categoryName" required>
+        <button type="submit">Create Category</button>
+    </form>
+</section>
+<button id="showCategoryFormBtn">Add Category</button>
+
 
         <section id="categoryList">
             <h2>Categories</h2>
@@ -45,7 +48,6 @@
             <ul id="categories"></ul>
         </section>
     </main>
-    <!-- Include any necessary JavaScript files here -->
 </body>
 <script src="./JS/dashboard.js"></script>
 </html>

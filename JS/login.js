@@ -20,7 +20,6 @@ $(document).ready(function () {
                 alert("Processing.....");
                 alert("Done!!");
                 alert("Login successful!" + merchantEmail + "ID: " + merchantId);
-                localStorage.setItem('OurMerchant_user', merchantId)
                 window.location.href = "./dashboard.html";
             },
             error: function (xhr, status, error) {

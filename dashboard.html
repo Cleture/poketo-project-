@@ -1,45 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Merchant Account - Poketo</title>
     <link
       rel="shortcut icon"
       href="./Assets/images/PK-favicon.png"
-      type="image/x-icon"
-    />
+      type="image/x-icon" />
     <link rel="stylesheet" href="./dash.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet">
-                      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-</head>
-<body>
-          <nav class="nav">
-        <a href="/" class="blog_logo"><img src="./Assets/images/pk-logotype-dark.png" alt="Logo" /></a>
-        <input type="text" placeholder="Search..." />
-        <div class="blog_links" id="blog_links">
-          <a href="./create_category.html" class="blog_create">
-            <img src="./Assets/images/image-gallery.png" alt="Add Blog" />
-          </a>
-        </div>
-      </nav>
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="/" class="blog_logo"><img
+          src="./Assets/images/pk-logotype-dark.png" alt="Logo" /></a>
+      <input type="text" placeholder="Search..." />
+      <div class="blog_links" id="blog_links">
+        <a href="./create_category.html" class="blog_create">
+          <img src="./Assets/images/image-gallery.png" alt="Add Blog" />
+        </a>
+      </div>
+    </nav>
 
     <main>
-<section id="categoryForm" style="display: none;">
-    <button id="closeCategoryFormBtn">X</button>
-    <h2>Create a Category</h2>
-    <form id="createCategoryForm">
-        <label for="categoryName">Category Name:</label>
-        <input type="text" id="categoryName" name="categoryName" required>
-        <button type="submit">Create Category</button>
-    </form>
-</section>
-<button id="showCategoryFormBtn">Add Category</button>
-</body>
-<script src="./JS/dashboard.js"></script>
-</html>
+      <section id="categoryForm" style="display: none;">
+        <button id="closeCategoryFormBtn">X</button>
+        <h2>Create a Category</h2>
+        <form id="createCategoryForm">
+          <label for="categoryName">Category Name:</label>
+          <input type="text" id="categoryName" name="categoryName" required>
+          <button type="submit">Create Category</button>
+        </form>
+      </section>
+      <button id="showCategoryFormBtn">Add Category</button>
+    </body>
+    <script src="./JS/dashboard.js"></script>
+  </html>

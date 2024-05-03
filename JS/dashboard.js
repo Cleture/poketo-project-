@@ -1,58 +1,36 @@
-$(document).ready(function () {
-    $("#showCategoryFormBtn").click(function () {
-        $("#categoryForm").show();
-    });
+$(document).ready(function() {
+    $('#createCategoryForm').submit(function(event) {
+        event.preventDefault();
 
-    $("#closeCategoryFormBtn").click(function () {
-        $("#categoryForm").hide();
-    });
+        var categoryName = $('#categoryName').val();
 
-    let loggedUser = localStorage.getItem("OurMerchant_user");
-    if (!loggedUser) {
-        alert("Please log in to access the dashboard.");
-        window.location.href = "./login_merchant.html"; 
-        return;
-    }
-
-    $("#createCategoryForm").submit(function (e) {
-        e.preventDefault(); 
-
-      
-        let formData = {
-            merchant_id: "662fcfc1f7192e0c5d709b4b", 
-            name: $("#categoryName").val()
+        var requestBody = {
+            "merchant_id": "662fcfc1f7192e0c5d709b4b",
+            "name": categoryName
         };
 
-       
         $.ajax({
-            url: "http://ecommerce.reworkstaging.name.ng/v2/categories",
-            method: "POST",
-            data: JSON.stringify(formData),
-            contentType: "application/json",
-            success: function (response) {
-                alert("Category created successfully");
-                $("#categoryName").val("");
-                addCategoryToList(response);
+            url: 'http://ecommerce.reworkstaging.name.ng/v2/categories',
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify(requestBody),
+            success: function(response) {
+                console.log('Category created successfully:', response);
             },
-            error: function (err) {
-                console.error("Error creating category:", err);
-                alert("Failed to create category. Please try again later.");
+            error: function(xhr, status, error) {
+                console.error('Error creating category:', error);
             }
         });
     });
 
-    function addCategoryToList(category) {
-        $("#categories").append(`<li>${category.name}</li>`);
-    }
-
-    $("#logoutBtn").click(function () {
-        localStorage.removeItem("OurMerchant_user");
-        alert("Logout successful");
-        window.location.href = "../pages/login.html"; // Redirect to login page
+    $('#showCategoryFormBtn').click(function() {
+        $('#categoryForm').toggle();
     });
-
-    fetchAndDisplayCategories();
+    $('#closeCategoryFormBtn').click(function() {
+        $('#categoryForm').hide();
+    });
 });
+
 
 
 

@@ -25,7 +25,7 @@ $(document).ready(function () {
             data: JSON.stringify(merchantData),
             success: function (response) {
                 alert("Merchant account created successfully!");
-                localStorage.setItem("OurMerchant_user", JSON.stringify(response.data));
+                localStorage.setItem("OurMerchant_user", JSON.stringify(response));
                 window.location.href = "./login_merchant.html"
                 console.log(response);
             },

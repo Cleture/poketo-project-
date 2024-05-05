@@ -20,8 +20,7 @@
   </head>
   <body>
     <nav class="nav">
-      <a href="/" class="blog_logo"><img
-          src="./Assets/images/pk-logotype-dark.png" alt="Logo" /></a>
+      <a href="/" class="blog_logo"><img src="./Assets/images/pk-logotype-dark.png" alt="Logo" /></a>
       <input type="text" placeholder="Search..." />
       <div class="blog_links" id="blog_links">
         <a href="./create_category.html" class="blog_create">
@@ -30,17 +29,25 @@
       </div>
     </nav>
 
-    <main>
-      <section id="categoryForm" style="display: none;">
-        <button id="closeCategoryFormBtn">X</button>
-        <h2>Create a Category</h2>
-        <form id="createCategoryForm">
-          <label for="categoryName">Category Name:</label>
-          <input type="text" id="categoryName" name="categoryName" required>
-          <button type="submit">Create Category</button>
-        </form>
+  <main>
+<section id="categoryForm" style="display: none;">
+  <button id="closeCategoryFormBtn">X</button>
+  <h2>Create a Category</h2>
+  <form id="createCategoryForm">
+      <label for="categoryName">Category Name:</label>
+      <input type="text" id="categoryName" name="categoryName" required>
+      <button type="submit">Create Category</button>
+  </form>
+</section>
+<button id="showCategoryFormBtn">Add Category</button>
+
+
+      <section id="categoryList">
+          <h2>Categories</h2>
+          <div id="productCards"></div>
+          <ul id="categories"></ul>
       </section>
-      <button id="showCategoryFormBtn">Add Category</button>
+  </main>
     </body>
     <script src="./JS/dashboard.js"></script>
   </html>

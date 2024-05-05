@@ -119,7 +119,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="image">Product Image</label>
-                                <input type="file" class="form-control" id="image" />
+                                <input type="file" class="form-control" id="fileInput" />
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -141,7 +141,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="discount-expire">Discount Expiration</label>
-                                <input type="date" class="form-control" id="discount-expire" />
+                                <input type="date" class="form-control" id="discount_expiration" />
                             </div>
                             <div class="form-group">
                                 <label for="category">Category</label>
@@ -149,9 +149,57 @@
                                     <option value="">Select</option>
                                 </select>
                             </div>
+                            <div class="form-group">
+                                <label for="refund">Return-Policy</label>
+                                <select class="form-control" id="has_refund_policy">
+                                    <option value="">Select</option>
+                                    <option value="true">True</option>
+                                    <option value="false">False</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="discount">Discount</label>
+                                <select class="form-control" id="has_discount">
+                                    <option value="">Select</option>
+                                    <option value="true">True</option>
+                                    <option value="false">False</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="variation">Variations</label>
+                                <select class="form-control" id="has_variation">
+                                    <option value="">Select</option>
+                                    <option value="true">Yes</option>
+                                    <option value="false">No</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="shipment">Shipments</label>
+                                <select class="form-control" id="has_shipment">
+                                    <option value="">Select</option>
+                                    <option value="true">Yes</option>
+                                    <option value="false">No</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="locations">Shipping-Locations</label>
+                                <select class="form-control" id="shipping_locations">
+                                    <option value="">Select</option>
+                                    <option value="true">Yes</option>
+                                    <option value="false">No</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="attributes">Attributes</label>
+                                <select class="form-control" id="shipping_locations">
+                                    <option value="">Select</option>
+                                    <option value="true">Yes</option>
+                                    <option value="false">No</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary" id="blogBtn">Submit</button>
+                    <button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
                 </form>
             </div>
         </div>
